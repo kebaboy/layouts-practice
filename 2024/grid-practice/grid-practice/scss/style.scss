@@ -1,0 +1,65 @@
+@import "_nullstyle.scss";
+
+$color-white: #FFFFFF;
+$color-black: #2D3436;
+$color-gray-64: #5C5C5C;
+$color-gray-48: #858585;
+$color-gray-32: #ADADAD;
+$color-gray-24: #C2C2C2;
+
+$color-blue-dark: #0984E3;
+$color-blue-light: #74B9FF;
+
+$color-green-dark: #00B894;
+$color-green-light: #55EFC4;
+
+$color-yellow-dark: #FDCB6E;
+$color-yellow-light: #FFEAA7;
+
+$color-red-dark: #D63031;
+$color-red-light: #FF7675;
+
+$color-purple-dark: #6C5CE7;
+$color-purple-light: #A29BFE;
+
+$color-pink-dark: #E84393;
+$color-pink-light: #FD79A8;
+
+
+$animation-speed: .3s;
+$animation-func: ease;
+$animation: $animation-speed $animation-func;
+
+
+$min-width:320px;
+$mw:1200px;
+$md1: $mw+12px;
+$md2:992.98px;
+$md3:767.98px;
+$md4:479.98px;
+
+[class*="__container"] {max-width:$mw;margin: 0px auto;width: 100%;
+    @media (max-width:$md1){max-width: 970px;}
+    @media (max-width:$md2){max-width: 750px;}
+    @media (max-width:$md3){max-width: none;padding: 0px 15px;}
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 32px;
+    color: $color-black;
+}
+
+@import "fonts.scss";
+@import "_button.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+

@@ -1,0 +1,39 @@
+.default-button,
+.primary-button,
+.primary-button-corner {
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.primary-button,
+.primary-button-corner {
+    background: $color-purple-dark;
+    color: $color-white;
+    transition: background-color $animation;
+}
+
+.default-button {
+    border: 1px solid $color-gray-32;
+    background: transparent;
+    color: $color-purple-dark;
+    transition: color $animation, border-color $animation;
+    &:hover, &:focus {
+        border-color: $color-gray-24;
+        background: transparent;
+        color: $color-purple-light;
+    }
+}
+
+.primary-button-corner {
+    border-radius: 999px;
+}
+
+.primary-button:hover,
+.primary-button-corner:hover,
+.primary-button:focus,
+.primary-button-corner:focus {
+    background: $color-purple-light;
+    color: $color-white;
+}
